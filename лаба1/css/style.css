@@ -1,0 +1,167 @@
+* {
+	box-sizing: border-box;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+
+table {
+	width: 1278px;
+	height: 602px;
+	border-collapse: collapse;
+	border: 3px black solid;
+}
+.cell-one {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	border: 3px black solid;
+}
+.cell-bg {
+	background: url(../images/женщина.jpg) no-repeat;
+	background-origin: content-box;
+	background-size: cover;
+	opacity: 0.2;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 0;
+	top: 0px;
+	left: 0px;
+}
+.cell-text {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 10px;
+	left: 20px;
+	right: 20px;
+	opacity: 1;
+	text-align: justify;
+}
+.cell-text p + p {
+	margin: 20px 0px 0px 0px;
+}
+.column-one {
+	display: inline-block;
+	width: 48%;
+	opacity: 100%;
+}
+.column-two {
+	position: relative;
+	padding: 0px 0px 0px 5px;
+	display: inline-block;
+	width: 48%;
+	height: 100%;
+}
+.column-one + .column-two {
+	margin-left: 6px;
+	border-left: 3px solid;
+	border-image: linear;
+	border-color: rgb(94, 36, 148);
+	border-image-slice: 1;
+}
+.text-one {
+	font-family: serif;
+	font-size: 20px;
+	color: 	rgb(22, 5, 68);
+}
+.cell-text span {
+	color: rgb(131, 11, 11);
+	text-transform: uppercase;
+}
+.text-two {
+	font-family: Arial, "Helvetica Neue";
+	font-size: 14px;
+	color: blueviolet;
+}
+.text-three {
+	font-family: Helvetica;
+	font-size: 19px;
+	color: rgb(226, 89, 10);
+}
+
+.shadow {
+	text-shadow: 5px 3px 3px black;
+}
+
+.cell-two {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	border: 3px black solid;
+	background-color: bisque;
+	opacity: 0.8;
+}
+.img-one {
+	position: absolute;
+	top: 270px;
+	left: 250px;
+	background: url(../images/абстракт.jpg) no-repeat;
+	background-size: cover;
+	height: 200px;
+	width: 250px;
+	z-index: 1;
+}
+.img-two {
+	position: absolute;
+	top: 160px;
+	left: 170px;
+	background: url(../images/спортсмены.jpg) no-repeat;
+	background-size: cover;
+	height: 200px;
+	width: 250px;
+	z-index: 2;
+}
+.img-three {
+	position: absolute;
+	top: 50px;
+	left: 90px;
+	background: url(../images/богатыри.jpg) no-repeat;
+	background-size: cover;
+	height: 200px;
+	width: 250px;
+	z-index: 3;
+}
+h2 {
+	position: relative;
+	top: -30px;
+	font-size: 25px;
+	color: rgb(89, 69, 177);
+	text-shadow: 3px 3px 5px rgb(77, 8, 161);
+}
+
+.object {
+	position: fixed;
+	right: 50%;
+	height: 200px;
+	width: 200px;
+	background: violet;
+
+	animation: rotate-object 5s infinite linear;
+}
+
+@keyframes rotate-object {
+	0% {
+		top: 0vh;
+	}
+	33% {
+		top: 33vh;
+		background: blue;
+		opacity: 10%;
+		transform: rotate(180deg);
+	}
+	66% {
+		top: 66vh;
+		background: rgb(255, 123, 0);
+		opacity: 100%;
+		transform: rotate(-1080deg);
+	}
+	100% {
+		margin-top: -230px;
+		top: 100vh;
+		background: black;
+		opacity: 80%;
+		transform: rotate(-720deg);
+	}
+}
