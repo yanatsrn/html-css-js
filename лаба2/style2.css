@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.object1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 609px;
+    width: 1280px;
+    background: radial-gradient(white, #e49790)
+}
+header{
+    position: relative;
+    
+}
+.header{
+    background: url(longcat.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+    top: 50px;
+    left: 600px;    
+    width: 600px;
+    height: 100px;
+    display: block;
+    z-index: 100;
+}
+
+.object2 {
+    position: relative;
+    display: block;
+    float:left;
+    height: 100px;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 20px;
+    border: 5px burlywood solid;
+    border-bottom: none;
+    background: burlywood;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: chocolate;
+    text-align: center;
+    box-shadow: 5px 0px 1px rgb(219, 166, 166), -5px -5px 2px rgb(219, 166, 166);
+    z-index: 99;
+}
+
+.object3 {
+    position: relative;
+    display: block;
+    float: left;
+    height: 450px;
+    width: 1150px;
+    margin-top: 0px;
+    margin-left: 60px;
+    border-radius: 20px;
+    border: 5px burlywood solid;
+    background: burlywood;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    box-shadow: 5px 5px 5px rgb(219, 166, 166), -5px -5px 5px rgb(219, 166, 166);
+}
+
+h3 {
+    margin-left: 15px;
+}
+
+p+p {
+    margin: 10px;
+}
+
+p+table {
+    margin: 10px;
+}
+
+table {
+    text-align: center;
+    border: 5px ivory solid;
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: 5px;
+    border: 5px ivory solid;
+}
+
+.text:hover{
+    background: rgb(233, 111, 111);
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-style: italic;
+}

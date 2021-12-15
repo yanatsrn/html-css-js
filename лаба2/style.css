@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.object1 {    
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 609px;
+    width: 1280px;
+    background: radial-gradient(white, #e0aca7)
+}
+
+.object2 {
+    position: relative;
+    top: 50px;
+    float: right;
+    border: 5px burlywood solid;
+    border-right: 5px burlywood solid;
+    shape-outside: polygon(500px 298px, 600px 100px, 1000px 100px, 1000px 298px);
+    clip-path: polygon(600px 0, 600px 300px, 0 300px, 200px 0);
+    background: burlywood;  
+    width: 700px;
+    height: 50px;
+    text-align: center;
+    color: rgb(119, 58, 17);
+    font-size: 30px;
+}
+
+.object3 {
+    position: relative;
+    display: block;
+    float: left;
+    border: 5px burlywood solid;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 50px;
+    margin-left: 100px;
+    height: 500px;
+    width: 1100px;
+    background:  burlywood;
+    font-size: larger;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.block {
+    position:absolute;
+    right: 0;
+    bottom: 0;
+}
+
+img {
+    height: 200px;
+    width: 300px;
+}
+
+ul {
+    margin-left: 40px;
+    list-style-image: url(lu.gif);
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+
+li::after {
+    content: "";
+    background: url(prikol2.jpg) no-repeat;
+    background-size: cover;
+    width: 70px;
+    height: 30px;
+    display: inline-block;
+}
+
+svg {
+    position: absolute;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.blink {
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    letter-spacing: 13px;
+    text-transform: uppercase;
+    font-size: 55px;
+	animation: blink 2s linear infinite; 
+	font-weight: bold; 
+	color: #F00; 
+}
+
+@keyframes blink {  
+	0% { color: #F00; }
+	50% { color: rgb(179, 119, 119); }
+	100% { color: #F00; } 
+}
+
+svg::before {
+    position: absolute;
+    /* content: "rjnbrb"; */
+    top: 0;
+    left:0;   
+    height: 10px;
+    width: 10px; 
+    background: #F00;
+}
+
+.textik {
+    position: relative;    
+}
