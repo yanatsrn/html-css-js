@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Котики</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body onload="init()">
+    <nav id="menu">
+        <button class="typeOfCat">Британцы</button>
+        <button class="typeOfCat">Мейнкуны</button>
+        <button class="typeOfCat">Скоттиш</button>
+        <button class="typeOfCat">Манчкин</button>
+        <button class="typeOfCat">Бенгальская</button>
+        <button class="typeOfCat">Корнишрекс</button>
+    </nav>
+    <label>Новая кнопка
+        <input id="text" type='text'>
+    </label>
+    <!-- <br> -->
+    <button id="addButton">
+        добавить кнопку
+    </button>
+    <br>
+    <label class="change">
+        Сменить цвет на один из радуги
+        <select id="color" onchange="changeColor()">
+            <option value="1">Красный</option>
+            <option value="2">Оранжевый</option>
+            <option value="3">Жёлтый</option>
+            <option value="4">Зелёный</option>
+            <option value="5">Голубой</option>
+            <option value="6">Синий</option>
+            <option value="7">Фиолетовый</option>
+        </select>
+    </label>    
+</body>
+<script src="js\script.js"></script>
+</html>

@@ -1,0 +1,56 @@
+
+button {
+    color: rgb(10, 5, 5);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    min-height: 50px;
+    margin: 10px;
+}
+
+.change {
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    padding: 100px;
+    
+}
+
+.imageInWindow {
+    width: 300px;
+    height: 400px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    padding-top: 10px;
+}
+
+.description {
+    width: 650px;
+    height: 500px;
+    position: fixed;
+    padding: 10 px;
+}
+
+.cat {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+}
+
+.hide {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    color: rgb(10, 5, 5);
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    min-height: 50px;
+    margin: 10px;
+}
