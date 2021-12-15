@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 90px;
+    width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 25px;
+    color: rgb(23, 65, 143);
+    background-image: url("header.jpg");
+    background-size: cover;
+}
+
+.helper {
+    width: 1500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.article {
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    justify-content: start;
+    flex-grow: 3;
+    background-image: url("letter.jpg");
+    background-size: cover;
+    text-align: left;
+    size: 10px;
+}
+
+.nev {
+    width: 150px;
+    height: 400px;
+    display: flex;
+    flex-grow: 1;
+    background-image: url("think.jpg");
+    background-size: cover;
+}
+
+.aside {
+    width: 150px;
+    height: 400px;
+    display: flex;
+    flex-grow: 1;
+    background-image: url("tired.jpg");
+    background-size: cover;
+}
+
+.footer {
+    width: 1500px;
+    padding-bottom: 10px;
+    height: 119px;
+    clear: left;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    animation: blink 2s linear infinite; 
+	font-weight:lighter; 
+    font-size: 30px;
+    text-shadow: 5px 5px 5px rgb(136, 62, 36);
+    background-image: url("fooler.jpg");
+    background-size: cover;
+}
+
+@keyframes blink {  
+	0% { color: rgb(224, 220, 228); }
+	50% { color: rgb(165, 62, 202); }
+	100% { color: rgb(184, 42, 150); } 
+}
+
+/* form */
+
+
+
+.title {
+    /* position: absolute; */
+    margin-left: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-family: fantasy;
+	text-shadow: 1px 1px 2px #6b0d4f, 0 0 1em black;
+	color:  #5c1058;
+	background: linear-gradient(45deg, #c2b7ae 3%, #b93e0d 6%, #161313);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+input {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.text {
+    height: 40px;
+	font-family: monospace;
+	font-style: italic;
+	font-size: 20px;
+	text-shadow: 1px 1px 2px black, 0 0 1em red;
+	color: #6d0a3c;
+    margin-left: 20px;
+
+}
+
+.nameExample {
+    border-radius: 10px;
+}
+
+option {
+    margin-left: 10px;
+}
+
+form {
+    position: fixed;
+}
+
+.buttons {
+    position: fixed;
+    align-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.pages {
+    text-align: center;
+	margin-top: 150px;
+    margin-left: 50px;
+	border-color: none;
+	border: 0px;
+}
+
+.result {
+    text-align: center;
+	margin-top: 20px;
+    margin-left: 80px;
+	border-color: none;
+	border: 0px;
+}
+
+table {
+    border:blueviolet 1px solid;
+    
+    /* border-collapse: collapse; */
+}
+
+th {
+    border:blueviolet 1px solid;
+}
+
+.object {
+    border: 1px solid blueviolet;
+  }
+
+.object div {
+    border: 1px solid  blueviolet;
+    height: 35px;
+    flex: 1;
+  }
+
+.select {
+    margin-top: 20px;
+    margin-bottom: 360px;
+    margin-left: 0px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+  }
+
+.select:focus {
+    outline: none;
+    border-color: black;
+  }
+
+.item {
+    display: flex;
+}
+
+.object1 {
+    border: 1px solid rgb(74, 6, 77);
+  }
+
+.object1 div {
+    border: 1px solid  rgb(75, 8, 82);
+    height: 35px;
+    flex: 1;
+  }
+
+.select1 {
+    margin-bottom: 300px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+  }
+
+.select1:focus {
+    outline: none;
+    border-color: black;
+  }
+

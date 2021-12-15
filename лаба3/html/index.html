@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	    <title >Опрос о проблемах вуза</title>
+	<link rel="stylesheet" href= "css\style.css" >
+    <script type="text/javascript" src="js\newScript.js"></script>
+    </head>
+    <body>
+        <div>
+            <header class="header">Анкета для выявления проблем</header>
+        </div>
+        <div class="helper">
+            <div class = "article">
+                <form>
+                    <fieldset>
+                        <legend class="title">
+                            Опрос студента о проблемах вуза
+                        </legend>
+                        <p class="text"> Имя
+                            <input type="text" name="name" id="name" placeholder="например, Евгений">
+                            Фамилия
+                            <input type="text" name="surname" id="surname" placeholder="например, Жулин">
+                        </p>
+                        <p class="text"> Неделя
+                            <input type = "week" name = "week" id = "week">
+                        </p>
+                        <p class="text">Проживает в общежитии
+                            <input type = "checkbox" name = "domitory" id = "domitory">
+                        </p>
+                        <p class="text">Факультет
+                            <select id="faculty">
+                                <option value="ФИТУ" name="faculty">ФИТУ</option>
+                                <option value="ИЭФ" name="faculty">ИЭФ</option>
+                                <option value="КСИС" name="faculty">КСИС</option>
+                                <option value="ФРЭ" name="faculty">ФРЭ</option>
+                                <option value="ФКП" name="faculty">ФКП</option>
+                            </select>
+                        </p>
+                        <p class="text">Проблемы<br>
+                            с преподавателями<input type="radio" name="radio" id = "radio" value = "преподами">
+                            с процессом обучения<input type="radio" name="radio" id = "radio" value="обучением">
+                            с состоянием корпусов<input type="radio" name="radio" id = "radio" value="корпусами">
+                        </p>
+                        
+                        <p class="text"  style="margin-top: 20px;">Курс обучения
+                            <input type="number" size="1" step="1" min="1" max="4" name="course" id = "course" placeholder="1-4">
+                        </p>
+                        <p class="text">Email
+                            <input type="email" name="email" id ="email" placeholder="evgesha@gmail.com">
+                            Время<input type="datetime-local" name="time" id="time">
+                            
+                        </p>
+                        <!-- <p class="text">Время
+                            
+                        </p> -->
+                    </fieldset>
+                    <fieldset>
+                        <p>
+                            <button name="send" type="button" onclick="execute()">Отправить</button>
+                            <button name="clear" type="reset">Очистить форму</button> 
+                        </p>                        
+                    </fieldset>
+                </form>
+            </div>
+            <div class="nev">
+            </div>
+            <div class="aside">
+                <div class="pages">
+                    <button name="send" type="button" disabled>Главная</button><br> 
+                    <a href="n.html" target="_blink"><button name="send" type="button">Результаты</button></a>                                     
+                </div>
+            </div>
+        </div>        
+        <div class="footer">
+                
+            Для предложений по оптимизации и расширению формы обращаться по телефону 80296548820
+        </div>
+    </body>
+</html>
